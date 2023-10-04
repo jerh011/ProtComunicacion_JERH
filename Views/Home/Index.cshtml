@@ -1,0 +1,15 @@
+﻿@model ProtComunicacion_JERH.Models.MessageViewModel
+
+<h2>Enviar Mensaje de Texto</h2>
+
+<form asp-controller="Home" asp-action="SendSms" method="post">
+    <div class="form-group">
+        <label for="to">Número de Destino:</label>
+        <input type="text" class="form-control" id="to" name="to" placeholder="Ejemplo: +1234567890" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Mensaje:</label>
+        <textarea class="form-control" id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+</form>
